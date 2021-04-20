@@ -537,7 +537,7 @@ class Designer extends Component {
              onMouseUp={this.stopDrag.bind(this)}>
 
           {/* Left Panel: Displays insertion tools (shapes, images, etc.) */}
-          {InsertMenuComponent && (
+          {this.props.InsertMenuComponent && (
             <InsertMenuComponent tools={objectTypes}
               currentTool={selectedTool}
               onSelect={this.selectTool.bind(this)} />
